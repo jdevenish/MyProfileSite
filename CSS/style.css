@@ -47,6 +47,10 @@ h1{
     max-width: 1792px;
 }
 
+.aboutMe > h1{
+    padding: 70px;
+}
+
 /*
   .resumeCards
     .cards
@@ -60,12 +64,18 @@ h1{
 .resumeCards{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+
 
 .card > div > h2{
     height: 30px;
     text-align: center;
     color: white;
+    font-family: "Audiowide";
+    font-size: 26px;
+    padding: 10px;
 }
 
 
@@ -86,8 +96,7 @@ h1{
     background-color: aqua;
     margin-bottom: 10px;
     padding: 4px;
-    width: 100%;
-    height: 100%;
+
 }
 
 .cardContent > h3{
@@ -125,8 +134,24 @@ h1{
     padding: 10px;
 }
 
+.achievements{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .year{
     float: right;
+}
+
+.navIcon{
+    float: right;
+}
+
+.navIcon > img{
+    width: 50px;
+    height: 50px;
 }
 
 .cspoBadge{
