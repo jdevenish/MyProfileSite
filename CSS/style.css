@@ -1,0 +1,67 @@
+.welcomePage{
+    background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1583777219/jeshoots-com-pUAM5hPaCRI-unsplash_hv6oi2.jpg");
+    /*position: relative;*/
+    width: auto;
+    height: 100vh;
+    overflow-y: scroll;
+    background-size: cover;
+    background-position: left top;
+}
+
+h1{
+    font-family: "Audiowide";
+    font-size: 77px;
+    line-height: 22px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.welcomePage > div{
+    /*position: absolute;*/
+    /*width: 217.02px;*/
+    /*height: 366.67px;*/
+    /*margin-left: 961px;*/
+    /*margin-top: 427px;*/
+    /*transform: rotate(-10deg);*/
+}
+
+.welcomePage > div > p{
+    position: absolute;
+    width: 316px;
+    height: 370px;
+    left: 920px;
+    top: 450px;
+    font-family: "Nanum Pen";
+    font-size: 26px;
+    line-height: 24px;
+    /* or 85% */
+
+    letter-spacing: 2px;
+    transform: rotate(-10deg);
+    color: #000000;
+}
+
+.aboutMe{
+    background-color: #F7B90B;
+    width: auto;
+    height: 100vh;
+}
+
+.resumeCards{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.resumeCards > section{
+    height: auto;
+    max-width: 500px;
+    background-color: aqua;
+}
+
+.resumeCards > section > h2{
+    font-size: 50px;
+    text-align: center;
+    margin: 25px;
+}
