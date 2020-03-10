@@ -1,67 +1,271 @@
+/*==============================================
+
+        MOBILE RESPONSIVE STYLING
+
+   TODO:
+
+==============================================*/
+
 .welcomePage{
-    background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1583777219/jeshoots-com-pUAM5hPaCRI-unsplash_hv6oi2.jpg");
-    /*position: relative;*/
+    background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1583859149/backgroundImage-Tablet_v2_ygstfc.png");
     width: auto;
+    max-width: 748px;
     height: 100vh;
-    overflow-y: scroll;
+    max-height: 1098px;
     background-size: cover;
-    background-position: left top;
+    background-position: center;
 }
 
 h1{
     font-family: "Audiowide";
-    font-size: 77px;
-    line-height: 22px;
+    font-size: 65px;
+    /*line-height: 22px;*/
     padding-top: 50px;
     text-align: center;
 }
 
-.welcomePage > div{
-    /*position: absolute;*/
-    /*width: 217.02px;*/
-    /*height: 366.67px;*/
-    /*margin-left: 961px;*/
-    /*margin-top: 427px;*/
-    /*transform: rotate(-10deg);*/
-}
-
 .welcomePage > div > p{
-    position: absolute;
     width: 316px;
     height: 370px;
-    left: 920px;
-    top: 450px;
+    /*left: 920px;*/
+    /*top: 450px;*/
+
     font-family: "Nanum Pen";
     font-size: 26px;
-    line-height: 24px;
-    /* or 85% */
+    line-height: 85%;
 
     letter-spacing: 2px;
     transform: rotate(-10deg);
     color: #000000;
+    /*padding-left: 50px;*/
+    /*padding-top: -20px;*/
+    margin: 220px auto;
 }
 
 .aboutMe{
     background-color: #F7B90B;
-    width: auto;
-    height: 100vh;
+    max-width: 1792px;
 }
 
+/*
+  .resumeCards
+    .cards
+      .cardContent
+        .cardContent > h3
+        .cardContent > h4
+        .cardContent > h5
+        .cardContent > p
+        .cardContent > ul
+ */
 .resumeCards{
-    margin-top: 150px;
     display: flex;
-    justify-content: space-around;
-
+    flex-direction: column;
 }
 
-.resumeCards > section{
-    height: auto;
-    max-width: 500px;
-    background-color: aqua;
-}
-
-.resumeCards > section > h2{
-    font-size: 50px;
+.card > div > h2{
+    height: 30px;
     text-align: center;
-    margin: 25px;
+    color: white;
+}
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #4C4443;
+    padding: 0 10px;
+    max-width: 415px; /*TODO adust this so it looks good on mobile*/
+    margin-bottom: 15px;
+}
+
+.hideContent{
+    display: none;
+}
+
+.cardContent{
+    background-color: aqua;
+    margin-bottom: 10px;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.cardContent > h3{
+    font-size: 24px;
+    text-align: left;
+    padding: 8px 3px;
+    font-weight: bold;
+}
+
+.cardContent > h4{
+    font-size: 20px;
+    text-align: left;
+    margin: 8px 3px;
+}
+
+.cardContent > h5{
+    font-size: 18px;
+    text-align: left;
+    margin: 8px 3px;
+    text-indent: 10px;
+}
+
+.cardContent > p{
+    font-size: 16px;
+    text-align: justify;
+    padding-left: 15px;
+    text-indent: 15px;
+    line-height: 20px;
+}
+
+.cardContent > ul{
+    font-size: 16px;
+    text-align: left;
+    /*margin: 8px 3px;*/
+    padding: 10px;
+}
+
+.year{
+    float: right;
+}
+
+.cspoBadge{
+    display: flex;
+    /*align-self: center;*/
+}
+
+.cspoBadge > img{
+    width: 64px;
+    height: 64px;
+    /*background-size: cover;*/
+
+}
+
+.cspoBadge > a{
+    text-decoration: none;
+    font-size: 16px;
+    padding-top: 25px;
+    margin-left: 10px;
+    color: black;
+}
+/*==============================================
+
+        TABLET RESPONSIVE STYLING
+
+==============================================*/
+@media (min-width:768px){
+    .welcomePage{
+        background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1583859974/backgroundImage-Tablet_v3_cfnuwt.png");
+        width: auto;
+        max-width: 1024px;
+        height: 100vh;
+        max-height: 1087px;
+        /*overflow-y: scroll;*/
+        background-size: cover;
+        background-position: center;
+        /*background-size: 1792px 1120px;*/
+    }
+
+    .welcomePage > div > p{
+        width: 302px;
+        height: 370px;
+        /*left: 920px;*/
+        /*top: 450px;*/
+
+        font-family: "Nanum Pen";
+        font-size: 26px;
+        line-height: 85%;
+
+        letter-spacing: 2px;
+        transform: rotate(-10deg);
+        color: #000000;
+        /*padding-left: 50px;*/
+        /*padding-top: -20px;*/
+        margin: 299px auto;
+    }
+
+    .card > div > h2{
+        color: blue;
+    }
+
+    .hideContent{
+        display: block;
+    }
+}
+
+/*==============================================
+
+        DESKTOP RESPONSIVE STYLING
+
+   TODO: Fix vertical responsive design. Text overlapping About Me section
+
+==============================================*/
+@media (min-width:1024px){
+    .welcomePage{
+        background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1583777219/jeshoots-com-pUAM5hPaCRI-unsplash_hv6oi2.jpg");
+        position: page;
+        width: auto;
+        max-width: 1792px;
+        height: 100vh;
+        max-height: 1120px;
+        /*overflow-y: scroll;*/
+        background-size: cover;
+        background-position: center;
+        background-size: 1792px 1120px;
+
+    }
+
+    h1{
+        font-family: "Audiowide";
+        font-size: 77px;
+        line-height: 22px;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .welcomePage > div > p{
+        /*position: absolute;*/
+        width: 316px;
+        height: 370px;
+        /*left: 920px;*/
+        /*top: 450px;*/
+
+        font-family: "Nanum Pen";
+        font-size: 26px;
+        line-height: 85%;
+
+        letter-spacing: 2px;
+        transform: rotate(-10deg);
+        color: #000000;
+        padding-left: 370px;
+        /*padding-top: -20px;*/
+        margin: 325px auto;
+    }
+
+    .card > div > h2{
+        color: red;
+    }
+    .hideContent{
+        display: block;
+    }
+
+    .resumeCards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* align-items: stretch; */
+    }
+
+    .achievements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        background-color: #CAC4C6;
+    }
+
+    .cardContent{
+        background-color: aqua;
+    }
 }

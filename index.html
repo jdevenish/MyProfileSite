@@ -17,6 +17,7 @@
     <body>
         <!-- Welcome -->
         <header class="welcomePage">
+
             <h1>JD</h1>
             <div>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when
@@ -30,24 +31,25 @@
         <main>
             <!-- About Me -->
             <section class="aboutMe">
-                <h1>about me</h1>
                 <div class="resumeCards">
                     <!-- Education -->
-                    <section>
-                        <h2>Education</h2>
-                        <div>
-                            <h3>georgia institute of technology </h3>
-                            <h4>B.S. Electrical Engineering <span>2012</span></h4>
-                            <h3>Presidential Undergraduate Research Award<span>2011</span></h3>
+                    <section class="card">
+                        <div id="education">
+                            <h2>Education</h2>
+                        </div>
+                        <div id="eduContent" class="cardContent hideContent">
+                            <h3>Georgia Institute of Technology </h3>
+                            <h4>B.S. Electrical Engineering <span class="year">2012</span></h4>
+                            <h5>Presidential Undergraduate Research Award<span class="year">2011</span></h5>
                             <p>Using a 3 axis accelerometer and a 3 axis gyroscope I was able to create a glove that
-                                would control a robotic hand. Think of the mechanical suits from Avatar. When the driver moves
-                                his arms and fingers the robots arms and fingers respond with nothing more than sensors
-                                on the driver's hands. The goal was to provide a way to quickly respond with medical
-                                assistance to natural disasters around the world. The number of victims just needing
-                                clean bandages or medicine administered could be served by medical students and nurses
-                                around the world who want to help but can commit to traveling to the location of the
-                                disaster.</p>
-                            <h3>I-Natural Team Member<span>2011</span></h3>
+                                would control a robotic hand. Think of the mechanical suits from Avatar. When the driver
+                                moves his arms and fingers the robots arms and fingers respond with nothing more than
+                                sensors on the driver's hands. The goal was to provide a way to quickly respond with
+                                medical assistance to natural disasters around the world. The number of victims just
+                                needing clean bandages or medicine administered could be served by medical students and
+                                nurses around the world who want to help but can commit to traveling to the location of
+                                the disaster.</p>
+                            <h5>I-Natural Team Member<span class="year">2011</span></h5>
                             <p>As a member of this team we built a device that allowed children with cerebral palsy to
                                 control and use apps designed for the iPad. We built apps that could be controlled using
                                 a forearm mounted set of sensors that could interpret broad strokes and gestures as
@@ -55,14 +57,16 @@
                         </div>
                     </section>
                     <!-- Work History -->
-                    <section>
-                        <h2>Work History</h2>
-                        <div>
+                    <section class="card">
+                        <div id="workHistory">
+                            <h2>Work History</h2>
+                        </div>
+                        <div id="workContent" class="cardContent hideContent">
                             <h3>OneTrust, LLC</h3>
-                            <h4>Product Manager</h4>
+                            <h4>Product Manager <span class="year">4/18 - 2/20</span></h4>
                             <ul>
                                 <li>Drove product development from conception to launch</li>
-                                <li>Develop roadmaps and work with the cross-functional team to execute plans</li>
+                                <li>Develop the roadmap and work with a cross-functional team to execute plans</li>
                                 <li>Created detailed functional specifications, user stories, and acceptance criteria
                                     for product and process enhancements</li>
                                 <li>Gathered and documented functional and technical requirements for both developers
@@ -70,8 +74,7 @@
                                 <li>Drove ongoing improvements and efficiencies in product health, operational
                                     practices, tools and processes</li>
                             </ul>
-                            <h4>Product Owner</h4>
-                            <h4>Technical Implementation Consultant</h4>
+                            <h4>Technical Implementation Consultant <span class="year">1/18 - 4/18</span></h4>
                             <ul>
                                 <li>Oversaw the technical implementation and platform adoption for customer projects
                                     from start to finish</li>
@@ -84,32 +87,48 @@
                                     configuration activities</li>
                             </ul>
                             <h3>Johnson Outdoors Marine Electronics</h3>
-                            <h4>Design Qualification Engineer</h4>
+                            <h4>Design Qualification Engineer <span class="year">5/12 - 12/17</span></h4>
                             <ul>
                                 <li>Design and develop qualification procedures for mechanical, electrical, and software
                                     components.</li>
                                 <li>Designed keypad recorder and playback device to assist in unit and integration tests</li>
                                 <li>It is a long established fact that a reader will be distracted by the readable content</li>
                             </ul>
-
                         </div>
                     </section>
                     <!-- Achievements -->
-                    <section>
-                        <h2>Certifications</h2>
-                        <div>
-                            <h3>Certified Scrum Product Owner</h3>
-                        </div>
-                        <h2>Awards</h2>
-                        <h4>Circle of Excellence | Johnson Outdoors Marine Electronics</h4>
-                        <p>In recognition of teamwork and accomplishments far exceeding the expectations of the Marine Electronics Group</p>
-                        <h2>Patent</h2>
-                        <h4>Methods, controllers and computer program products for accessibility to computing devices</h4>
-                        <p>Patent: US10281986B2</p>
-
-
-
-                    </section>
+                    <div class="achievements">
+                        <section class="card">
+                            <div id="certifications">
+                                <h2>Certifications</h2>
+                            </div>
+                            <div id="certContent" class="cardContent hideContent">
+                                <h3>Certified Scrum Product Owner </h3>
+                                <div class="cspoBadge">
+                                    <img src="https://res.cloudinary.com/doaftkgbv/image/upload/v1583851437/seal-cspo_xczouv.png" alt="CSPO Badge Icon">
+                                    <a href="https://www.scrumalliance.org/community/profile/jdevenish">Scrum Alliance Profile</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div id="awards">
+                                <h2>Awards</h2>
+                            </div>
+                            <div id="awardsContent" class="cardContent hideContent">
+                                <h3>Circle of Excellence <span class="year">2013</span></h3>
+                                <p>Awarded by Johnson Outdoors Marine Electronics in recognition of teamwork and accomplishments far exceeding the expectations of the Marine Electronics Group</p>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div id="patents">
+                                <h2>Patents</h2>
+                            </div>
+                            <div id="patentsContent" class="cardContent hideContent">
+                                <h3>Patent: US10281986B2 <span class="year">2013</span></h3>
+                                <p>Methods, controllers and computer program products for accessibility to computing devices</p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </section>
             <!-- Projects -->
