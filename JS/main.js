@@ -7,6 +7,8 @@ let awardMenuExpanded = false;
 let patentMenuExpanded = false;
 
 
+
+
 if (typeof $ == 'undefined'){
     console.log('oops! I still have to link my jQuery properly!');
 } else {console.log('I did it! I linked jQuery and this js file properly!')};
@@ -49,14 +51,7 @@ let rowCSS = {
         FUNCTIONS
 
 ==============================================*/
-let buildEmailForm = () => {
-    $(".formRow").addClass(rowCSS)
-    $("#name").attr(nameInputAttr).addClass(bodyCSS);
-    $("#company").attr(companyInputAttr).addClass(bodyCSS);
-    $("#email").attr(emailInputAttr).addClass(bodyCSS);
-    $("#body").attr(bodyInputAttr).addClass(bodyCSS);
-    //$("#body").addClass(bodyCSS).addClass(bodyCSS);
-}
+
 
 /*==============================================
 
@@ -76,8 +71,8 @@ $("#education").click(function() {
     }
 });
 
-$( "#workHistory" ).click(function() {
-    if($( window ).width() < 768){
+$("#workHistory").click(function() {
+    if($(window).width() < 768){
         $( "#workContent" ).toggleClass("hideContent" );
         if(workMenuExpanded){
             $("#workNavIcon").attr("src", "https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,w_64/v1583872051/expand_more-24px_jtv5ih.svg");
@@ -89,9 +84,9 @@ $( "#workHistory" ).click(function() {
     }
 });
 
-$( "#certifications" ).click(function() {
-    if($( window ).width() < 768){
-        $( "#certContent" ).toggleClass("hideContent" );
+$("#certifications").click(function() {
+    if($(window).width() < 768){
+        $("#certContent").toggleClass("hideContent" );
         if(certMenuExpanded){
             $("#certNavIcon").attr("src", "https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,w_64/v1583872051/expand_more-24px_jtv5ih.svg");
             certMenuExpanded = false;
@@ -102,9 +97,9 @@ $( "#certifications" ).click(function() {
     }
 });
 
-$( "#awards" ).click(function() {
-    if($( window ).width() < 768){
-        $( "#awardsContent" ).toggleClass("hideContent" );
+$("#awards").click(function() {
+    if($(window).width() < 768){
+        $("#awardsContent").toggleClass("hideContent" );
         if(awardMenuExpanded){
             $("#awardsNavIcon").attr("src", "https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,w_64/v1583872051/expand_more-24px_jtv5ih.svg");
             awardMenuExpanded = false;
@@ -115,7 +110,7 @@ $( "#awards" ).click(function() {
     }
 });
 
-$( "#patents" ).click(function(){
+$("#patents").click(function(){
     if($( window ).width() < 768){
         $( "#patentsContent" ).toggleClass("hideContent" );
         if(patentMenuExpanded){
@@ -127,6 +122,7 @@ $( "#patents" ).click(function(){
         }
     }
 });
+
 
 
 //buildEmailForm();

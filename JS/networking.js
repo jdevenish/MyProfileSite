@@ -1,3 +1,5 @@
+let projectArray = []
+
 let requestOptions = {
     method: 'GET',
     redirect: 'follow'
@@ -23,7 +25,27 @@ fetch("https://spreadsheets.google.com/feeds/list/1t0qkcAYCxxrVNQ3TpLGhP3ovSpSgr
     })
     .catch(error => console.log('error', error));
 
-function app(projects) {
-    console.log('app-projects', projects)
 
+let buildProjectCard = (project) => {
+    let projectCardCSS = {
+        "background-image": `url(${project.icon})`
+    }
+    let html = ` <div class="project" style="background-image: url(${project.icon});">
+                    <div class="projectName">
+                        <h3>${project.title}</h3>
+                    </div>
+                    
+                    
+                </div>`
+    return html
 }
+
+function app(projects) {
+    for(let i=0; i<projects.length; i++){
+        projectArray.push(projects[i])
+        $('#projectContentContainer').append(buildProjectCard(projects[i]))
+    }
+}
+
+
+

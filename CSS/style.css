@@ -240,6 +240,62 @@ p.copyrightNotice{
     padding: 10px;
 }
 
+.socialIcon{
+    height: 45px;
+    width: 45px;
+    margin: 15px 10px;
+}
+
+.socialIcon > a > svg{
+    color: #F7B90B;
+}
+
+.socialIconArray{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#projectContentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+
+.projects{
+    background-color: #CAC4C6;
+    padding: 50px;
+}
+
+.project{
+    margin: 25px;
+    width: 400px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.projectName{
+    height: 50px;
+    text-align: center;
+    background-color: #4C4443;
+    opacity: 0.9;
+    margin-top: 120px;
+}
+
+.projectName > h3{
+    padding-top: 10px;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.iconImage > img{
+    width: 300px;
+    height: 300px;
+}
 /*==============================================
 
         TABLET RESPONSIVE STYLING
