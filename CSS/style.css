@@ -229,6 +229,16 @@ input[type=submit] {
     margin: 3px auto;
 }
 
+.spacer{
+    height: 50px;
+}
+
+p.copyrightNotice{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+}
 
 /*==============================================
 
