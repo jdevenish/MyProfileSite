@@ -46,7 +46,8 @@ let popUpBoxMessage = {
 
 let imgContainer = {
     "width":"400",
-    "height":"400"
+    "height":"400",
+    "cursor": "pointer"
 }
 
 /*===============================
@@ -95,7 +96,6 @@ fetch("https://spreadsheets.google.com/feeds/list/1t0qkcAYCxxrVNQ3TpLGhP3ovSpSgr
         </div>
     </div>
  ===============================*/
-// TODO: Break this up into several functions
 let buildProjectCard = (project) => {
     const $cardContainer = buildCardContainer(project)
     const $projectNameBanner = buildCardBanner(project)
@@ -162,8 +162,11 @@ function app(projects) {
  ===============================*/
 function findProject() {
     for(let i=0; i<projectArray.length; i++){
+        console.log("Searching...")
         if($(this).html().includes(projectArray[i].title)){
+            console.log("Match found")
             loadDetailsModal(projectArray[i])
+
         }
     }
 }
@@ -180,6 +183,7 @@ function loadDetailsModal(singleProject) {
 
     $modalBackground.append($modalDetails)
     $('#modal').append($modalBackground)
+    $('#modal').css("display","block")
 
 }
 
@@ -246,7 +250,7 @@ function buildModalHeaderText(currentProject) {
     const $closeButton = buildModalCloseButton()
 
     $h2ModalContent.append($closeButton)
-
+    console.log("buildModalHeaderText Called")
     return $h2ModalContent
 }
 
@@ -257,14 +261,18 @@ function buildModalHeaderText(currentProject) {
  ===============================*/
 function buildModalCloseButton() {
     const $closeButton = $('<span>').addClass("year")
-    $closeButton.on("click", closeModal())
+
+    // Can't have closeModal with () our it executes immed.
+    $closeButton.on("click", closeModal =>{
+        $('#modal').css("display","none")
+    })
 
     const $closeIcon = $('<img>').attr({
         "src":"https://res.cloudinary.com/doaftkgbv/image/upload/v1583872051/close-24px_vgg9zk.svg"
     })
 
     $closeButton.append($closeIcon)
-
+    console.log("buildModalCloseButton Called")
     return $closeButton
 }
 
@@ -280,25 +288,12 @@ function buildModalImage(currentProject) {
         "id":"selectedProject"
     })
     $imgProject.css(imgContainer)
-    //$imgProject.on("click", linkToProject(currentProject.repoURL))
+    $imgProject.on("click", linkToProject => {
+        let win = window.open(currentProject.repoURL);
+        win.focus();
+    })
 
     return $imgProject
-}
-
-/*===============================
-
-    Open project link when clicked
-
- ===============================*/
-function linkToProject(projectURL) {
-    console.log(projectURL)
-    let win = window.open(projectURL);
-    win.focus();
-}
-
-function closeModal(){
-    console.log("close button called")
-    // $('#modal').css("display","none")
 }
 
 /*===============================
