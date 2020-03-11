@@ -25,4 +25,5 @@ fetch("https://spreadsheets.google.com/feeds/list/1t0qkcAYCxxrVNQ3TpLGhP3ovSpSgr
 
 function app(projects) {
     console.log('app-projects', projects)
+
 }

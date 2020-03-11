@@ -22,6 +22,11 @@ h1{
     /*line-height: 22px;*/
     padding-top: 50px;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+li{
+    list-style:disc inside;
 }
 
 .welcomePage > div > p{
@@ -93,7 +98,7 @@ h1{
 }
 
 .cardContent{
-    background-color: aqua;
+    background-color: #CAC4C6;
     margin-bottom: 10px;
     padding: 4px;
 
@@ -131,7 +136,7 @@ h1{
     font-size: 16px;
     text-align: left;
     /*margin: 8px 3px;*/
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .achievements{
@@ -143,15 +148,17 @@ h1{
 
 .year{
     float: right;
+    font-size: 14px;
 }
 
 .navIcon{
     float: right;
+
 }
 
 .navIcon > img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .cspoBadge{
@@ -173,6 +180,56 @@ h1{
     margin-left: 10px;
     color: black;
 }
+
+footer{
+
+    background-color: #4C4443;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #F7B90B;
+    color: #4C4443;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*float: right;*/
+}
+
+.formContainer {
+    border-radius: 5px;
+    background-color: #CAC4C6;
+    padding: 20px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#message{
+    height:200px;
+}
+
+.col-75 {
+    /*float: left;*/
+    width: 90%;
+    /*margin-top: 6px;*/
+    margin: 3px auto;
+}
+
+
 /*==============================================
 
         TABLET RESPONSIVE STYLING
@@ -185,10 +242,8 @@ h1{
         max-width: 1024px;
         height: 100vh;
         max-height: 1087px;
-        /*overflow-y: scroll;*/
         background-size: cover;
         background-position: center;
-        /*background-size: 1792px 1120px;*/
     }
 
     .welcomePage > div > p{
@@ -209,12 +264,20 @@ h1{
         margin: 299px auto;
     }
 
-    .card > div > h2{
-        color: blue;
-    }
-
     .hideContent{
         display: block;
+    }
+
+    .hideNav{
+        display:none;
+    }
+
+    .achievements{
+        width: unset;
+    }
+
+    .formContainer {
+        width: 80%;
     }
 }
 
@@ -236,7 +299,7 @@ h1{
         /*overflow-y: scroll;*/
         background-size: cover;
         background-position: center;
-        background-size: 1792px 1120px;
+        /*background-size: 1792px 1120px;*/
 
     }
 
@@ -267,9 +330,6 @@ h1{
         margin: 325px auto;
     }
 
-    .card > div > h2{
-        color: red;
-    }
     .hideContent{
         display: block;
     }
@@ -278,7 +338,7 @@ h1{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        /* align-items: stretch; */
+        align-items: stretch;
     }
 
     .achievements{
@@ -287,10 +347,18 @@ h1{
     }
 
     .card{
-        background-color: #CAC4C6;
+        background-color: #4C4443;
     }
 
-    .cardContent{
-        background-color: aqua;
+    .hideNav{
+        display:none;
+    }
+
+    .achievements{
+        width: unset;
+    }
+
+    .formContainer {
+        width: 45%;
     }
 }
