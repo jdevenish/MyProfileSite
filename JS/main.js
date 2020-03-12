@@ -1,38 +1,28 @@
+/*===============================
 
+    JQuery Validation Check
 
+ ===============================*/
+if (typeof $ == 'undefined'){
+    console.log('oops! I still have to link my jQuery properly!');
+} else {console.log('I did it! I linked jQuery and this js file properly!')};
+
+/*===============================
+
+    Mobile Expanding Nav Variables
+
+ ===============================*/
 let eduMenuExpanded = false;
 let workMenuExpanded = false;
 let certMenuExpanded = false;
 let awardMenuExpanded = false;
 let patentMenuExpanded = false;
 
+/*===============================
 
+    CSS Objects
 
-
-if (typeof $ == 'undefined'){
-    console.log('oops! I still have to link my jQuery properly!');
-} else {console.log('I did it! I linked jQuery and this js file properly!')};
-
-
-let nameInputAttr = {
-    // size: 50,
-    placeholder: "First and Last Name"
-}
-
-let companyInputAttr = {
-    // size: 50,
-    placeholder: "Company Name"
-}
-
-let emailInputAttr = {
-    // size: 103,
-    placeholder: "Email Address"
-}
-
-let bodyInputAttr = {
-
-}
-
+ ===============================*/
 let bodyCSS = {
     "width": "100%",
     "padding": "12px",
@@ -46,16 +36,28 @@ let rowCSS = {
     "margin-top": "6px"
 }
 
+/*===============================
+
+   HTML TAG ATTRIBUTES
+
+ ===============================*/
+let nameInputAttr = {
+    placeholder: "First and Last Name"
+}
+
+let companyInputAttr = {
+    placeholder: "Company Name"
+}
+
+let emailInputAttr = {
+    // size: 103,
+    placeholder: "Email Address"
+}
+
+
 /*==============================================
 
-        FUNCTIONS
-
-==============================================*/
-
-
-/*==============================================
-
-        LISTENERS
+        ABOUT ME LISTENERS
 
 ==============================================*/
 $("#education").click(function() {
@@ -123,6 +125,11 @@ $("#patents").click(function(){
     }
 });
 
+/*===============================
+
+   Mobile Expanding Nav Menu
+
+ ===============================*/
 $(document).ready(function() {
 
     // activeX = true ==> EXPAND
@@ -138,41 +145,59 @@ $(document).ready(function() {
             $(this).find('.first').css({
                 'background-color': '#ff3131',
                 'transform': 'translate(0px,125px)'});
-        } else{
-            $(this).find('.first').css({
-                'background-color': 'gray',
-                'transform': 'none'});
-        }
-
-        if (!active2){
             $(this).find('.second').css({
                 'background-color': '#ff3131',
                 'transform': 'translate(60px,105px)'});
-        } else{
-            $(this).find('.second').css({
-                'background-color': 'gray',
-                'transform': 'none'});
-        }
-
-        if (!active3){
             $(this).find('.third').css({
                 'background-color': '#ff3131',
                 'transform': 'translate(105px,60px)'});
-        } else{
-            $(this).find('.third').css({
-                'background-color': 'gray',
-                'transform': 'none'});
-        }
-
-        if (!active4){
             $(this).find('.fourth').css({
                 'background-color': '#ff3131',
                 'transform': 'translate(125px,0px)'});
         } else{
+            $(this).find('.first').css({
+                'background-color': 'gray',
+                'transform': 'none'});
+            $(this).find('.second').css({
+                'background-color': 'gray',
+                'transform': 'none'});
+            $(this).find('.third').css({
+                'background-color': 'gray',
+                'transform': 'none'});
             $(this).find('.fourth').css({
                 'background-color': 'gray',
                 'transform': 'none'});
         }
+
+        // if (!active2){
+        //     $(this).find('.second').css({
+        //         'background-color': '#ff3131',
+        //         'transform': 'translate(60px,105px)'});
+        // } else{
+        //     $(this).find('.second').css({
+        //         'background-color': 'gray',
+        //         'transform': 'none'});
+        // }
+        //
+        // if (!active3){
+        //     $(this).find('.third').css({
+        //         'background-color': '#ff3131',
+        //         'transform': 'translate(105px,60px)'});
+        // } else{
+        //     $(this).find('.third').css({
+        //         'background-color': 'gray',
+        //         'transform': 'none'});
+        // }
+        //
+        // if (!active4){
+        //     $(this).find('.fourth').css({
+        //         'background-color': '#ff3131',
+        //         'transform': 'translate(125px,0px)'});
+        // } else{
+        //     $(this).find('.fourth').css({
+        //         'background-color': 'gray',
+        //         'transform': 'none'});
+        // }
 
         active1 = !active1;
         active2 = !active2;
@@ -181,6 +206,3 @@ $(document).ready(function() {
 
     });
 });
-
-//buildEmailForm();
-
