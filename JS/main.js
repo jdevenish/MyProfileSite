@@ -128,81 +128,47 @@ $("#patents").click(function(){
 /*===============================
 
    Mobile Expanding Nav Menu
-
+Inspired By: Code By Webdevtrick ( https://webdevtrick.com )
  ===============================*/
-$(document).ready(function() {
+let active1 = false;
+let active2 = false;
+let active3 = false;
+let active4 = false;
 
-    // activeX = true ==> EXPAND
-    // activeX = false ==> COLLAPSE
-    var active1 = false;
-    var active2 = false;
-    var active3 = false;
-    var active4 = false;
+let navAboutMeON = {
+    'transform': 'translate(0px,-125px)'
+}
 
-    $('.container').on('mousedown touchstart', function() {
+let navWorkHistoryON = {
+    'transform': 'translate(60px,-105px)'
+}
 
-        if (!active1){
-            $(this).find('.first').css({
-                'background-color': '#ff3131',
-                'transform': 'translate(0px,125px)'});
-            $(this).find('.second').css({
-                'background-color': '#ff3131',
-                'transform': 'translate(60px,105px)'});
-            $(this).find('.third').css({
-                'background-color': '#ff3131',
-                'transform': 'translate(105px,60px)'});
-            $(this).find('.fourth').css({
-                'background-color': '#ff3131',
-                'transform': 'translate(125px,0px)'});
-        } else{
-            $(this).find('.first').css({
-                'background-color': 'gray',
-                'transform': 'none'});
-            $(this).find('.second').css({
-                'background-color': 'gray',
-                'transform': 'none'});
-            $(this).find('.third').css({
-                'background-color': 'gray',
-                'transform': 'none'});
-            $(this).find('.fourth').css({
-                'background-color': 'gray',
-                'transform': 'none'});
-        }
+let navProjectsON = {
+    'transform': 'translate(105px,-60px)'
+}
 
-        // if (!active2){
-        //     $(this).find('.second').css({
-        //         'background-color': '#ff3131',
-        //         'transform': 'translate(60px,105px)'});
-        // } else{
-        //     $(this).find('.second').css({
-        //         'background-color': 'gray',
-        //         'transform': 'none'});
-        // }
-        //
-        // if (!active3){
-        //     $(this).find('.third').css({
-        //         'background-color': '#ff3131',
-        //         'transform': 'translate(105px,60px)'});
-        // } else{
-        //     $(this).find('.third').css({
-        //         'background-color': 'gray',
-        //         'transform': 'none'});
-        // }
-        //
-        // if (!active4){
-        //     $(this).find('.fourth').css({
-        //         'background-color': '#ff3131',
-        //         'transform': 'translate(125px,0px)'});
-        // } else{
-        //     $(this).find('.fourth').css({
-        //         'background-color': 'gray',
-        //         'transform': 'none'});
-        // }
+let navContactON = {
+    'transform': 'translate(125px,0px)'
+}
 
-        active1 = !active1;
-        active2 = !active2;
-        active3 = !active3;
-        active4 = !active4;
+let navOFF = {
+    'transform': 'none'
+}
 
-    });
+$('.container').on('click', function() {
+    if (!active1){
+        $(this).find('.navAboutMe').css(navAboutMeON);
+        $(this).find('.navWorkHistory').css(navWorkHistoryON);
+        $(this).find('.navProjects').css(navProjectsON);
+        $(this).find('.navContact').css(navContactON);
+    } else{
+        $(this).find('.navAboutMe').css(navOFF);
+        $(this).find('.navWorkHistory').css(navOFF);
+        $(this).find('.navProjects').css(navOFF);
+        $(this).find('.navContact').css(navOFF);
+    }
+    active1 = !active1;
+    active2 = !active2;
+    active3 = !active3;
+    active4 = !active4;
 });

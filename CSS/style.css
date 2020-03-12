@@ -296,6 +296,9 @@ p.copyrightNotice{
     height: 300px;
 }
 
+
+
+
 /************************************************/
 .container {
     bottom:15px;
@@ -312,10 +315,11 @@ p.copyrightNotice{
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
-.first {
+
+.navAboutMe {
     width:60%;
     height:60%;
-    background-color:#ff3131;
+    /*background-color:#ff3131;*/
     border-radius:50%;
     position:absolute;
     color:white;
@@ -326,12 +330,14 @@ p.copyrightNotice{
     z-index:19;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
     position:absolute;
-    /*bottom: 0;*/
+    background-color: #F7B90B;
+    border: 2px solid #CAC4C6;
 }
-.second {
+
+.navWorkHistory {
     width:60%;
     height:60%;
-    background-color:#ff3131;
+    /*background-color:#ff3131;*/
     border-radius:50%;
     position:absolute;
     color:white;
@@ -342,11 +348,14 @@ p.copyrightNotice{
     z-index:19;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
     /*bottom: 0;*/
+    background-color: #F7B90B;
+    border: 2px solid #CAC4C6;
 }
-.third {
+
+.navProjects {
     width:60%;
     height:60%;
-    background-color:#ff3131;
+    /*background-color:#ff3131;*/
     border-radius:50%;
     position:absolute;
     color:white;
@@ -356,11 +365,14 @@ p.copyrightNotice{
     left:25%;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
     /*bottom: 0;*/
+    background-color: #F7B90B;
+    border: 2px solid #CAC4C6;
 }
-.fourth {
+
+.navContact {
     width:60%;
     height:60%;
-    background-color:#ff3131;
+    /*background-color:#ff3131;*/
     border-radius:50%;
     position:absolute;
     color:white;
@@ -370,7 +382,10 @@ p.copyrightNotice{
     left:25%;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
     /*bottom: 0;*/
+    background-color: #F7B90B;
+    border: 2px solid #CAC4C6;
 }
+
 .bigOne {
     bottom:15px;
     left:15px;
