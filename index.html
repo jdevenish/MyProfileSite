@@ -137,7 +137,7 @@
                 <div id="projectContentContainer">
 
                 </div>
-                <div id="modal">
+                <div id="projectModal">
 
                 </div>
             </section>
@@ -147,20 +147,24 @@
             <h1>contact me</h1>
             <div class="spacer">
             </div>
+
             <div class="formContainer">
-                <div class="row col-75">
-                    <input type="text" id="fullName"  placeholder="Your name..">
-                </div>
-                <div class="row col-75">
-                    <input type="email" id="emailAddr"  placeholder="Your email address..">
-                </div>
-                <div class="row col-75">
-                    <textarea id="message"  placeholder="Add a message.."></textarea>
-                </div>
-                <div class="row">
-                    <button id="submit">Submit</button>
-                </div>
+                <form name="submit-to-google-sheet">
+                    <div class="row col-75">
+                        <input name="name" type="text" id="fullName"  placeholder="Your name..">
+                    </div>
+                    <div class="row col-75">
+                        <input name="email" type="email" id="emailAddr"  placeholder="Your email address..">
+                    </div>
+                    <div class="row col-75">
+                        <textarea name="message" id="message"  placeholder="Add a message.."></textarea>
+                    </div>
+                    <div class="row">
+                        <button id="submit" class="submitContact">Submit</button>
+                    </div>
+                </form>
             </div>
+            <div id="formMessage"></div>
             <div class="spacer"></div>
             <div class="socialIconArray">
                 <div class="socialIcon">
@@ -191,5 +195,6 @@
 
         <script src="JS/main.js"></script>
         <script src="JS/networking.js"></script>
+        <script src="JS/contactMe.js"></script>
     </body>
 </html>

@@ -2,12 +2,10 @@
 
         MOBILE RESPONSIVE STYLING
 
-   TODO:
-
 ==============================================*/
 
 .welcomePage{
-    background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584019928/ProfileWelcomePage6_bid6vw.png");
+    background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584033664/ProfileWelcomePage10_c8jsjr.png");
     width: auto;
     max-width: 748px;
     height: 100vh;
@@ -199,7 +197,7 @@ label {
     display: inline-block;
 }
 
-input[type=submit] {
+button.submitContact{
     background-color: #F7B90B;
     color: #4C4443;
     font-weight: bold;
@@ -426,7 +424,7 @@ p.copyrightNotice{
 ==============================================*/
 @media (min-width:1024px){
     .welcomePage{
-        background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584018364/ProfileWelcomePage3_vplcol.png");
+        /*background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584018364/ProfileWelcomePage3_vplcol.png");*/
         background-color: #E2E5EA;
         /*position: page;*/
         /*width: auto;*/

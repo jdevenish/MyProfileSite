@@ -199,7 +199,7 @@ function loadDetailsModal(singleProject) {
     let $modalDetails = buildModalDetails(singleProject)
 
     $modalBackground.append($modalDetails)
-    $("#modal").append($modalBackground).css("display", "block")
+    $("#projectModal").append($modalBackground).css("display", "block")
 }
 
 /*===============================
@@ -268,7 +268,7 @@ function buildModalHeaderText(currentProject) {
     $h2ModalContent.text(currentProject.title)
     $h2ModalContent.css(popUpBoxHeader)
 
-    const $closeButton = buildModalCloseButton()
+    const $closeButton = buildModalCloseButton("#projectModal")
 
     $h2ModalContent.append($closeButton)
     console.log("buildModalHeaderText Called")
@@ -281,12 +281,12 @@ function buildModalHeaderText(currentProject) {
 
     <span class="year"><img src=closeIcon></span>
  ===============================*/
-function buildModalCloseButton() {
+function buildModalCloseButton(id) {
     const $closeButton = $('<span>').addClass("year")
 
     // Can't have closeModal with () our it executes immed.
     $closeButton.on("click", closeModal =>{
-        $('#modal').css("display","none")
+        $(id).css("display","none")
     })
 
     const $closeIcon = $('<img>').attr({
@@ -323,7 +323,7 @@ function buildModalImage(currentProject) {
 
     Build Modal: Description
 
-    <p>Description</p>
+     <p>Description</p>
  ===============================*/
 function buildModalDescription(currentProject) {
     const $pModalContent = $('<p>')
