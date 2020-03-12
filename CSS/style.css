@@ -7,7 +7,7 @@
 ==============================================*/
 
 .welcomePage{
-    background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1583859149/backgroundImage-Tablet_v2_ygstfc.png");
+    background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584019928/ProfileWelcomePage6_bid6vw.png");
     width: auto;
     max-width: 748px;
     height: 100vh;
@@ -18,7 +18,7 @@
 
 h1{
     font-family: "Audiowide";
-    font-size: 65px;
+    font-size: 77px;
     /*line-height: 22px;*/
     padding-top: 50px;
     text-align: center;
@@ -36,7 +36,7 @@ li{
     /*top: 450px;*/
 
     font-family: "Nanum Pen";
-    font-size: 26px;
+    font-size: 20px;
     line-height: 85%;
 
     letter-spacing: 2px;
@@ -391,31 +391,13 @@ p.copyrightNotice{
 ==============================================*/
 @media (min-width:768px){
     .welcomePage{
-        background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1583859974/backgroundImage-Tablet_v3_cfnuwt.png");
+        background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584018364/ProfileWelcomePage3_vplcol.png");
         width: auto;
         max-width: 1024px;
         height: 100vh;
         max-height: 1087px;
         background-size: cover;
         background-position: center;
-    }
-
-    .welcomePage > div > p{
-        width: 302px;
-        height: 370px;
-        /*left: 920px;*/
-        /*top: 450px;*/
-
-        font-family: "Nanum Pen";
-        font-size: 26px;
-        line-height: 85%;
-
-        letter-spacing: 2px;
-        transform: rotate(-10deg);
-        color: #000000;
-        /*padding-left: 50px;*/
-        /*padding-top: -20px;*/
-        margin: 299px auto;
     }
 
     .hideContent{
@@ -444,12 +426,13 @@ p.copyrightNotice{
 ==============================================*/
 @media (min-width:1024px){
     .welcomePage{
-        background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1583777219/jeshoots-com-pUAM5hPaCRI-unsplash_hv6oi2.jpg");
-        position: page;
-        width: auto;
-        max-width: 1792px;
+        background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584018364/ProfileWelcomePage3_vplcol.png");
+        background-color: #E2E5EA;
+        /*position: page;*/
+        /*width: auto;*/
+        max-width: 2500px;
         height: 100vh;
-        max-height: 1120px;
+        /*max-height: 1120px;*/
         /*overflow-y: scroll;*/
         background-size: cover;
         background-position: center;
@@ -463,6 +446,7 @@ p.copyrightNotice{
         line-height: 22px;
         padding-top: 50px;
         text-align: center;
+        width: 100%;
     }
 
     .welcomePage > div > p{
@@ -472,8 +456,8 @@ p.copyrightNotice{
         /*left: 920px;*/
         /*top: 450px;*/
 
-        font-family: "Nanum Pen";
-        font-size: 26px;
+        font-family: 'Architects Daughter';
+        font-size: 20px;
         line-height: 85%;
 
         letter-spacing: 2px;
