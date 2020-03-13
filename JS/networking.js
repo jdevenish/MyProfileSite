@@ -271,7 +271,7 @@ function buildModalHeaderText(currentProject) {
     $h2ModalContent.text(currentProject.title);
     $h2ModalContent.css(popUpBoxHeader);
 
-    const $closeButton = buildModalCloseButton("#projectModal");
+    const $closeButton = buildModalCloseButton();
 
     $h2ModalContent.append($closeButton);
     return $h2ModalContent
@@ -283,12 +283,12 @@ function buildModalHeaderText(currentProject) {
 
     <span class="year"><img src=closeIcon></span>
  ===============================*/
-function buildModalCloseButton(id) {
+function buildModalCloseButton(id="#popUpModal") {
     const $closeButton = $("<span>").addClass("year");
 
     // NOTE: Don't add () to end of listener function. Will execute immediately if so.
     $closeButton.on("click", closeModal =>{
-        $(id).css("display","none")
+        $(id).remove()
     })
 
     const $closeIcon = $("<img>").attr({
@@ -339,8 +339,3 @@ function buildModalDescription(currentProject) {
     $pModalContainer.append($pModalContent);
     return $pModalContainer
 }
-
-
-
-
-
