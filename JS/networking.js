@@ -1,7 +1,11 @@
-let projectArray = []
+/*===============================
 
+    Initialize Variables
 
-
+ ===============================*/
+let projectArray = [];
+const projectSpreadsheetURL = "https://spreadsheets.google.com/feeds/list/1t0qkcAYCxxrVNQ3TpLGhP3ovSpSgrcyShWTxNN_8zNE/od6/public/values?alt=json";
+const closeIcon = "https://res.cloudinary.com/doaftkgbv/image/upload/v1583872051/close-24px_vgg9zk.svg";
 
 /*===============================
 
@@ -19,7 +23,7 @@ let popUp = {
     "height": "100%",
     "overflow": "auto",
     "background-color": "rgba(0,0,0,0.4)"
-}
+};
 
 let popUpBox = {
     "background-color": "#fefefe",
@@ -28,24 +32,24 @@ let popUpBox = {
     "border": "1px solid #888",
     "width":"60%",
     "text-align": "center"
-}
+};
 
 let popUpBoxHeader = {
-    "font-family": "\'Inknut Antiqua\', serif",
+    "font-family": "\"Inknut Antiqua\", serif",
     "font-size": "20px",
     "margin-bottom": "12px"
-}
+};
 
 let popUpBoxMessage = {
     "font-size": "14px",
     "margin-bottom": "8px"
-}
+};
 
 let imgContainer = {
     "width":"400",
     "height":"400",
     "cursor": "pointer"
-}
+};
 
 /*===============================
 
@@ -55,11 +59,11 @@ let imgContainer = {
 
 let popUpAttr = {
     "id" : "popUpModal"
-}
+};
 
 let popUpContentAttr = {
     "id" : "modalContent"
-}
+};
 
 /*===============================
 
@@ -68,16 +72,14 @@ let popUpContentAttr = {
  ===============================*/
 
 let requestOptions = {
-    method: 'GET',
-    redirect: 'follow'
+    method: "GET",
+    redirect: "follow"
 };
 
-fetch("https://spreadsheets.google.com/feeds/list/1t0qkcAYCxxrVNQ3TpLGhP3ovSpSgrcyShWTxNN_8zNE/od6/public/values?alt=json", requestOptions)
+fetch(projectSpreadsheetURL, requestOptions)
     .then(response => response.json()) // This parses date from string to object
     .then(result => {
-        // console.log(result) // This provides us access to the parse data]
         let projects = result.feed.entry.map(project => {
-            // console.log('project', project.gsx$title.$t)
             return {
                 title: project.gsx$title.$t,
                 description: project.gsx$description.$t,
@@ -87,10 +89,9 @@ fetch("https://spreadsheets.google.com/feeds/list/1t0qkcAYCxxrVNQ3TpLGhP3ovSpSgr
                 article: project.gsx$url.$t
             }
         })
-        // console.log(projects)
         app(projects)
     })
-    .catch(error => console.log('error', error));
+    .catch(error => console.log("error", error));
 
 
 
@@ -107,13 +108,13 @@ fetch("https://spreadsheets.google.com/feeds/list/1t0qkcAYCxxrVNQ3TpLGhP3ovSpSgr
     </div>
  ===============================*/
 let buildProjectCard = (project) => {
-    const $cardContainer = buildCardContainer(project)
-    const $projectNameBanner = buildCardBanner(project)
+    const $cardContainer = buildCardContainer(project);
+    const $projectNameBanner = buildCardBanner(project);
 
-    $cardContainer.append($projectNameBanner)
+    $cardContainer.append($projectNameBanner);
 
     return $cardContainer
-}
+};
 
 /*===============================
 
@@ -124,13 +125,12 @@ let buildProjectCard = (project) => {
     </div>
  ===============================*/
 function buildCardContainer(project) {
-
-    const $cardContainer = $('<div>')
+    const $cardContainer = $("<div>");
     $cardContainer.addClass("project").css({
         "background-image": `url(${project.icon})`
-    })
+    });
 
-    $cardContainer.on('click', findProject)
+    $cardContainer.on("click", findProject);
 
     return $cardContainer
 }
@@ -144,13 +144,13 @@ function buildCardContainer(project) {
     </div>
  ===============================*/
 function buildCardBanner(project) {
-    const $projectNameBanner = $('<div>')
-    $projectNameBanner.addClass("projectName")
+    const $projectNameBanner = $("<div>");
+    $projectNameBanner.addClass("projectName");
 
-    const $projectName = $('<h3>')
-    $projectName.text(project.title)
+    const $projectName = $("<h3>");
+    $projectName.text(project.title);
 
-    $projectNameBanner.append($projectName)
+    $projectNameBanner.append($projectName);
 
     return $projectNameBanner
 }
@@ -164,8 +164,8 @@ function buildCardBanner(project) {
  ===============================*/
 function app(projects) {
     for(let i=0; i<projects.length; i++){
-        projectArray.push(projects[i])
-        $('#projectContentContainer').append(buildProjectCard(projects[i]))
+        projectArray.push(projects[i]);
+        $("#projectContentContainer").append(buildProjectCard(projects[i]))
     }
     projectArray = projects.slice();
 }
@@ -180,9 +180,7 @@ function app(projects) {
  ===============================*/
 function findProject() {
     for(let i=0; i<projectArray.length; i++){
-        console.log("Searching...")
         if($(this).html().includes(projectArray[i].title)){
-            console.log("Match found")
             loadDetailsModal(projectArray[i])
         }
     }
@@ -194,11 +192,10 @@ function findProject() {
    card has been clicked
  ===============================*/
 function loadDetailsModal(singleProject) {
-    console.log("Modal Loading", singleProject)
-    let $modalBackground = buildModalBackground()
-    let $modalDetails = buildModalDetails(singleProject)
+    let $modalBackground = buildModalBackground();
+    let $modalDetails = buildModalDetails(singleProject);
 
-    $modalBackground.append($modalDetails)
+    $modalBackground.append($modalDetails);
     $("#projectModal").append($modalBackground).css("display", "block")
 }
 
@@ -211,9 +208,9 @@ function loadDetailsModal(singleProject) {
     </div>
  ===============================*/
 function buildModalBackground(){
-    const $divModal = $('<div>')
-    $divModal.css(popUp)
-    $divModal.attr(popUpAttr)
+    const $divModal = $("<div>");
+    $divModal.css(popUp);
+    $divModal.attr(popUpAttr);
 
     return $divModal
 }
@@ -229,15 +226,14 @@ function buildModalBackground(){
 
  ===============================*/
 function buildModalDetails(currentProject){
+    const $divModalContent = buildModalContentContainer();
+    const $h2ModalContent = buildModalHeaderText(currentProject);
+    const $imgProject = buildModalImage(currentProject);
+    const $pModalContent = buildModalDescription(currentProject);
 
-    const $divModalContent = buildModalContentContainer()
-    const $h2ModalContent = buildModalHeaderText(currentProject)
-    const $imgProject = buildModalImage(currentProject)
-    const $pModalContent = buildModalDescription(currentProject)
-
-    $divModalContent.append($h2ModalContent)
-    $divModalContent.append($imgProject)
-    $divModalContent.append($pModalContent)
+    $divModalContent.append($h2ModalContent);
+    $divModalContent.append($imgProject);
+    $divModalContent.append($pModalContent);
 
     return $divModalContent
 }
@@ -250,9 +246,9 @@ function buildModalDetails(currentProject){
     </div>
  ===============================*/
 function buildModalContentContainer() {
-    const $divModalContent = $('<div>')
-    $divModalContent.css(popUpBox)
-    $divModalContent.attr(popUpContentAttr)
+    const $divModalContent = $("<div>");
+    $divModalContent.css(popUpBox);
+    $divModalContent.attr(popUpContentAttr);
 
     return $divModalContent
 }
@@ -264,14 +260,13 @@ function buildModalContentContainer() {
     <h2>Project Title <span class="year"><img src=closeIcon></span></h2>
  ===============================*/
 function buildModalHeaderText(currentProject) {
-    const $h2ModalContent = $('<h2>')
-    $h2ModalContent.text(currentProject.title)
-    $h2ModalContent.css(popUpBoxHeader)
+    const $h2ModalContent = $("<h2>");
+    $h2ModalContent.text(currentProject.title);
+    $h2ModalContent.css(popUpBoxHeader);
 
-    const $closeButton = buildModalCloseButton("#projectModal")
+    const $closeButton = buildModalCloseButton("#projectModal");
 
-    $h2ModalContent.append($closeButton)
-    console.log("buildModalHeaderText Called")
+    $h2ModalContent.append($closeButton);
     return $h2ModalContent
 }
 
@@ -282,19 +277,18 @@ function buildModalHeaderText(currentProject) {
     <span class="year"><img src=closeIcon></span>
  ===============================*/
 function buildModalCloseButton(id) {
-    const $closeButton = $('<span>').addClass("year")
+    const $closeButton = $("<span>").addClass("year");
 
-    // Can't have closeModal with () our it executes immed.
+    // NOTE: Don't add () to end of listener function. Will execute immediately if so.
     $closeButton.on("click", closeModal =>{
         $(id).css("display","none")
     })
 
-    const $closeIcon = $('<img>').attr({
-        "src":"https://res.cloudinary.com/doaftkgbv/image/upload/v1583872051/close-24px_vgg9zk.svg"
+    const $closeIcon = $("<img>").attr({
+        "src": closeIcon
     })
 
-    $closeButton.append($closeIcon)
-    console.log("buildModalCloseButton Called")
+    $closeButton.append($closeIcon);
     return $closeButton
 }
 
@@ -305,16 +299,16 @@ function buildModalCloseButton(id) {
     <img src=project icon>
  ===============================*/
 function buildModalImage(currentProject) {
-    const $imgProject = $('<img>')
+    const $imgProject = $("<img>");
     $imgProject.attr({
         "src":currentProject.icon,
         "id":"selectedProject"
-    })
-    $imgProject.css(imgContainer)
+    });
+    $imgProject.css(imgContainer);
     $imgProject.on("click", linkToProject => {
         let win = window.open(currentProject.repoURL);
         win.focus();
-    })
+    });
 
     return $imgProject
 }
@@ -326,9 +320,9 @@ function buildModalImage(currentProject) {
      <p>Description</p>
  ===============================*/
 function buildModalDescription(currentProject) {
-    const $pModalContent = $('<p>')
-    $pModalContent.text(currentProject.description)
-    $pModalContent.css(popUpBoxMessage)
+    const $pModalContent = $("<p>");
+    $pModalContent.text(currentProject.description);
+    $pModalContent.css(popUpBoxMessage);
 
     return $pModalContent
 }

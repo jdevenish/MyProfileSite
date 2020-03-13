@@ -3,6 +3,17 @@
         MOBILE RESPONSIVE STYLING
 
 ==============================================*/
+h1{
+    font-family: "Audiowide", sans-serif;
+    font-size: 77px;
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+li{
+    list-style:disc inside;
+}
 
 .welcomePage{
     background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584033664/ProfileWelcomePage10_c8jsjr.png");
@@ -14,40 +25,8 @@
     background-position: center;
 }
 
-h1{
-    font-family: "Audiowide";
-    font-size: 77px;
-    /*line-height: 22px;*/
-    padding-top: 50px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-li{
-    list-style:disc inside;
-}
-
-.welcomePage > div > p{
-    width: 316px;
-    height: 370px;
-    /*left: 920px;*/
-    /*top: 450px;*/
-
-    font-family: "Nanum Pen";
-    font-size: 20px;
-    line-height: 85%;
-
-    letter-spacing: 2px;
-    transform: rotate(-10deg);
-    color: #000000;
-    /*padding-left: 50px;*/
-    /*padding-top: -20px;*/
-    margin: 220px auto;
-}
-
 .aboutMe{
     background-color: #F7B90B;
-    /*max-width: 1792px;*/
 }
 
 .aboutMe > h1{
@@ -56,7 +35,7 @@ li{
 
 /*
   .resumeCards
-    .cards
+    .card
       .cardContent
         .cardContent > h3
         .cardContent > h4
@@ -76,7 +55,7 @@ li{
     height: 30px;
     text-align: center;
     color: white;
-    font-family: "Audiowide";
+    font-family: "Audiowide", sans-serif;
     font-size: 26px;
     padding: 10px;
 }
@@ -133,8 +112,6 @@ li{
 .cardContent > ul{
     font-size: 16px;
     text-align: left;
-    /*margin: 8px 3px;*/
-    /*padding: 10px;*/
 }
 
 .achievements{
@@ -161,14 +138,11 @@ li{
 
 .cspoBadge{
     display: flex;
-    /*align-self: center;*/
 }
 
 .cspoBadge > img{
     width: 64px;
     height: 64px;
-    /*background-size: cover;*/
-
 }
 
 .cspoBadge > a{
@@ -205,7 +179,6 @@ button.submitContact{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    /*float: right;*/
 }
 
 .formContainer {
@@ -221,9 +194,7 @@ button.submitContact{
 }
 
 .col-75 {
-    /*float: left;*/
     width: 90%;
-    /*margin-top: 6px;*/
     margin: 3px auto;
 }
 
@@ -296,30 +267,23 @@ p.copyrightNotice{
     height: 300px;
 }
 
-
-
-
 /************************************************/
 .container {
     bottom:15px;
     left:15px;
     position:fixed;
-    /*bottom: 0;*/
     display:block;
     width:100px;
     height:100px;
     background-color:transparent;
     border-radius:50%;
     z-index:20;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .navAboutMe {
     width:60%;
     height:60%;
-    /*background-color:#ff3131;*/
     border-radius:50%;
     position:absolute;
     color:white;
@@ -329,7 +293,6 @@ p.copyrightNotice{
     left:25%;
     z-index:19;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-    position:absolute;
     background-color: #F7B90B;
     border: 2px solid #CAC4C6;
 }
@@ -337,7 +300,6 @@ p.copyrightNotice{
 .navWorkHistory {
     width:60%;
     height:60%;
-    /*background-color:#ff3131;*/
     border-radius:50%;
     position:absolute;
     color:white;
@@ -347,7 +309,6 @@ p.copyrightNotice{
     left:25%;
     z-index:19;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
-    /*bottom: 0;*/
     background-color: #F7B90B;
     border: 2px solid #CAC4C6;
 }
@@ -355,7 +316,6 @@ p.copyrightNotice{
 .navProjects {
     width:60%;
     height:60%;
-    /*background-color:#ff3131;*/
     border-radius:50%;
     position:absolute;
     color:white;
@@ -364,7 +324,6 @@ p.copyrightNotice{
     bottom:25%;
     left:25%;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
-    /*bottom: 0;*/
     background-color: #F7B90B;
     border: 2px solid #CAC4C6;
 }
@@ -372,7 +331,6 @@ p.copyrightNotice{
 .navContact {
     width:60%;
     height:60%;
-    /*background-color:#ff3131;*/
     border-radius:50%;
     position:absolute;
     color:white;
@@ -381,7 +339,6 @@ p.copyrightNotice{
     bottom:25%;
     left:25%;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
-    /*bottom: 0;*/
     background-color: #F7B90B;
     border: 2px solid #CAC4C6;
 }
@@ -393,16 +350,14 @@ p.copyrightNotice{
     height:100px;
     background:#212121;
     border-radius:50%;
-    position:absolute;
     z-index:21;
     color:white;
     text-align:center;
     line-height:120px;
     cursor:pointer;
     position:fixed;
-    /*bottom: 0;*/
 }
-/************************************************/
+
 /*==============================================
 
         TABLET RESPONSIVE STYLING
@@ -411,12 +366,7 @@ p.copyrightNotice{
 @media (min-width:768px){
     .welcomePage{
         background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584018364/ProfileWelcomePage3_vplcol.png");
-        width: auto;
         max-width: 1024px;
-        height: 100vh;
-        max-height: 1087px;
-        background-size: cover;
-        background-position: center;
     }
 
     .hideContent{
@@ -436,7 +386,6 @@ p.copyrightNotice{
     }
 
     .container {
-
         display: none;
     }
 }
@@ -445,55 +394,15 @@ p.copyrightNotice{
 
         DESKTOP RESPONSIVE STYLING
 
-   TODO: Fix vertical responsive design. Text overlapping About Me section
-
 ==============================================*/
 @media (min-width:1024px){
     .welcomePage{
-        /*background-image: url("https://res.cloudinary.com/doaftkgbv/image/upload/v1584018364/ProfileWelcomePage3_vplcol.png");*/
-        background-color: #E2E5EA;
-        /*position: page;*/
-        /*width: auto;*/
         max-width: 2500px;
-        height: 100vh;
-        /*max-height: 1120px;*/
-        /*overflow-y: scroll;*/
-        background-size: cover;
-        background-position: center;
-        /*background-size: 1792px 1120px;*/
-
     }
 
     h1{
-        font-family: "Audiowide";
-        font-size: 77px;
         line-height: 22px;
-        padding-top: 50px;
-        text-align: center;
         width: 100%;
-    }
-
-    .welcomePage > div > p{
-        /*position: absolute;*/
-        width: 316px;
-        height: 370px;
-        /*left: 920px;*/
-        /*top: 450px;*/
-
-        font-family: 'Architects Daughter';
-        font-size: 20px;
-        line-height: 85%;
-
-        letter-spacing: 2px;
-        transform: rotate(-10deg);
-        color: #000000;
-        padding-left: 370px;
-        /*padding-top: -20px;*/
-        margin: 325px auto;
-    }
-
-    .hideContent{
-        display: block;
     }
 
     .resumeCards{
@@ -506,18 +415,6 @@ p.copyrightNotice{
     .achievements{
         display: flex;
         flex-direction: column;
-    }
-
-    .card{
-        background-color: #4C4443;
-    }
-
-    .hideNav{
-        display:none;
-    }
-
-    .achievements{
-        width: unset;
     }
 
     .formContainer {
