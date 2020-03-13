@@ -68,6 +68,7 @@ li{
     padding: 0 10px;
     max-width: 415px; /*TODO adust this so it looks good on mobile*/
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 .hideContent{
@@ -245,6 +246,7 @@ p.copyrightNotice{
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .projectName{

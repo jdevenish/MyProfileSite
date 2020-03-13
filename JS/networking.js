@@ -1,3 +1,7 @@
+/*
+    TODO: Figure out why project modals are stacking
+ */
+
 /*===============================
 
     Initialize Variables
@@ -31,12 +35,14 @@ let popUpBox = {
     "padding":"20px",
     "border": "1px solid #888",
     "width":"60%",
-    "text-align": "center"
+    "text-align": "center",
+    "border-radius": "5px",
+    "box-shadow": "2px 2px rgba(0,0,0,0.5)"
 };
 
 let popUpBoxHeader = {
-    "font-family": "\"Inknut Antiqua\", serif",
-    "font-size": "20px",
+    "font-family": "\"Audiowide\", serif",
+    "font-size": "26px",
     "margin-bottom": "12px"
 };
 
@@ -46,9 +52,10 @@ let popUpBoxMessage = {
 };
 
 let imgContainer = {
-    "width":"400",
-    "height":"400",
-    "cursor": "pointer"
+    "width":"90%",
+    "height":"90%",
+    "cursor": "pointer",
+    "border": "1px solid black"
 };
 
 /*===============================
@@ -320,11 +327,17 @@ function buildModalImage(currentProject) {
      <p>Description</p>
  ===============================*/
 function buildModalDescription(currentProject) {
+    const $pModalContainer = $("<div>")
+    $pModalContainer.css({
+        "width": "60%",
+        "margin": "20px auto"
+    });
     const $pModalContent = $("<p>");
     $pModalContent.text(currentProject.description);
     $pModalContent.css(popUpBoxMessage);
 
-    return $pModalContent
+    $pModalContainer.append($pModalContent);
+    return $pModalContainer
 }
 
 
