@@ -32,7 +32,7 @@ I started this project by researching other portfolio websites to get inspiratio
 
 Below is how I broke down and prioritiezed the features that came my research. 
 
-|[Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773100/FeatureBrainstorming_hssb1g.png)|[Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png)|
+| [Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773100/FeatureBrainstorming_hssb1g.png) | [Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png) |
 
 ### Wireframes
 |[Mobile Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771400/Mobile-Wireframe_jm9zpg.png)|[Desktop Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771399/Desktop-wireframe_lwi0vk.png)|
