@@ -36,10 +36,10 @@ Below is how I broke down and prioritiezed the features that came my research.
 
 ### Design Inspiration & Wireframes
 
-## Mobile Touch Targets ##
+#### Mobile Touch Targets ####
 ![Mobile Touch Targets](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_663/v1584308078/MobileTargetZones_ydlx0d.png)
 
-## Large clean welcome page & fun navigation ##
+#### Large clean welcome page & fun navigation ####
 ![Welcome Page](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_516/v1584308080/DesignInspiration-NavTransition_geq1n6.png)
 
 
