@@ -32,16 +32,10 @@ I started this project by researching other portfolio websites to get inspiratio
 
 Below is how I broke down and prioritiezed the features that came my research. 
 
-[Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773100/FeatureBrainstorming_hssb1g.png)
-
- 
-[Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png)
+|[Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773100/FeatureBrainstorming_hssb1g.png)|[Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png)|
 
 ### Wireframes
-[Mobile Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771400/Mobile-Wireframe_jm9zpg.png)
-
- 
-[Desktop Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771399/Desktop-wireframe_lwi0vk.png)
+|[Mobile Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771400/Mobile-Wireframe_jm9zpg.png)|[Desktop Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771399/Desktop-wireframe_lwi0vk.png)|
 
 ### MVP
 - Responsive
@@ -65,10 +59,10 @@ Below is how I broke down and prioritiezed the features that came my research.
   	- [x] Link to navigate to project repo
 
 - Build "Contact Me" section
-	- [x] Links to social platforms
-		- Github
-		- LinkedIn
-		- Codepen
+	- Links to social platforms
+		- [x] Github
+		- [x] LinkedIn
+		- [x] Codepen
 	- [x] Message Me Interface
 	
 - Content Creation
@@ -76,9 +70,9 @@ Below is how I broke down and prioritiezed the features that came my research.
   
 ### Post MVP
 - [x] Floating mobile navigation button **COMPLETE**
-- [] Bouncing scroll down arrow on page load
-- [] Grid to Carousel Switcher
-- [] Carousel for projects
-- [] Clean up Codepen projects **PARTIAL** 
-- [] Clean up Github projects **PARTIAL**
-- [] Clean up Repl.it projects **PARTIAL**
+- [ ] Bouncing scroll down arrow on page load
+- [ ] Grid to Carousel Switcher
+- [ ] Carousel for projects
+- [ ] Clean up Codepen projects **PARTIAL** 
+- [ ] Clean up Github projects **PARTIAL**
+- [ ] Clean up Repl.it projects **PARTIAL**
