@@ -31,6 +31,7 @@ Below is the timeline provided with roadmap estimates
 I started this project by researching other portfolio websites to get inspiration and a better understanding of how I would want to structure my site. The person viewing my portfolio should be able to quickly find three major things; a little about me and how I stand out from the compeition, some way to review and grade my work, and most importantly, an easy way to contact me. 
 
 Below is how I broke down and prioritiezed the features that came my research. 
+| Links to Project Planning Process |
 |---|
 | [Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773100/FeatureBrainstorming_hssb1g.png) | [Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png) |
 
