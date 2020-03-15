@@ -30,13 +30,6 @@ Below is the timeline provided with roadmap estimates
 
 I started this project by researching other portfolio websites to get inspiration and a better understanding of how I would want to structure my site. The person viewing my portfolio should be able to quickly find three major things; a little about me and how I stand out from the compeition, some way to review and grade my work, and most importantly, an easy way to contact me. 
 
-Below is how I broke down and prioritiezed the features that came my research. 
-#### Feature Brainstorm ####
-![Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_575/v1583773100/FeatureBrainstorming_hssb1g.png)
-
-#### Value vs Complexity Graph ####
-![Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_504/v1583773146/ValueVSComplexity_u2inhx.png)
-
 ### Design Inspiration ###
 
 #### Mobile Touch Targets ####
@@ -50,6 +43,14 @@ Below is how I broke down and prioritiezed the features that came my research.
 
 #### Project Card Transition #####
 ![Project Cards](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,w_1206/v1584308079/DesignInspiration-CardTransition_nauwna.png)
+
+Below is how I broke down and prioritiezed the features that came from my research. 
+#### Feature Brainstorm ####
+![Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_575/v1583773100/FeatureBrainstorming_hssb1g.png)
+
+#### Value vs Complexity Graph ####
+![Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_504/v1583773146/ValueVSComplexity_u2inhx.png)
+
 
 ### Wireframes ###
 
