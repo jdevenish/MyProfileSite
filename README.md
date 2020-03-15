@@ -1,5 +1,7 @@
 # Project 1: My Profile Site
 
+[(Click here to view the site)](https://jdevenish.github.io/MyProfileSite/)
+
 ## Overview
 Build a website from scratch using the skills taught during the firs section of this course. The website will be a self portfolio site displaying and linking to work I've done for homework and class labs. 
 
