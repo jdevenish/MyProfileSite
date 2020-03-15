@@ -36,7 +36,9 @@ Below is how I broke down and prioritiezed the features that came my research.
 | [Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773100/FeatureBrainstorming_hssb1g.png) |
 | [Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png) |
 
-### Wireframes
+### Design Inspiration & Wireframes
+
+![Mobile](https://res.cloudinary.com/doaftkgbv/image/upload/v1584308078/MobileTargetZones_ydlx0d.png)
 
 |Links to Design Wireframes |
 |---|
