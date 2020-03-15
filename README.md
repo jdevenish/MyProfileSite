@@ -26,9 +26,6 @@ Below is the timeline provided with roadmap estimates
 |Fri| Final Touches | Complete
 |Mon| Present | Incomplete
 
-## Wireframes
-
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
 ## Feature Research & Prioritization 
 
@@ -40,6 +37,10 @@ Below is how I broke down and prioritiezed the features that came my research.
 
  
 [Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png)
+
+### Wireframes
+[Mobile Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771400/Mobile-Wireframe_jm9zpg.png)
+[Desktop Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771399/Desktop-wireframe_lwi0vk.png)
 
 ### MVP
 - Responsive
