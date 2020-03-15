@@ -34,20 +34,28 @@ Below is how I broke down and prioritiezed the features that came my research.
 ![Feature Brainstorm](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773100/FeatureBrainstorming_hssb1g.png)
 ![Value vs Complexity Chart](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png)
 
-### Design Inspiration & Wireframes
+### Design Inspiration ###
 
 #### Mobile Touch Targets ####
 ![Mobile Touch Targets](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_663/v1584308078/MobileTargetZones_ydlx0d.png)
 
+#### Mobile Specific Menu Placement ####
+![Mob Nav](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_824/v1584308077/BottomNav_hcqquf.png)
+
 #### Large clean welcome page & fun navigation ####
 ![Welcome Page](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_516/v1584308080/DesignInspiration-NavTransition_geq1n6.png)
 
+#### Project Card Transition #####
+![Project Cards](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,w_1206/v1584308079/DesignInspiration-CardTransition_nauwna.png)
 
+### Wireframes ###
 
-|Links to Design Wireframes |
-|---|
-|[Mobile Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771400/Mobile-Wireframe_jm9zpg.png)|
-|[Desktop Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/v1583771399/Desktop-wireframe_lwi0vk.png)|
+#### Mobile ####
+![Mobile Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,h_877/v1583771400/Mobile-Wireframe_jm9zpg.png)
+
+#### Desktop ####
+![Desktop Wireframe](https://res.cloudinary.com/doaftkgbv/image/upload/c_scale,w_761/v1583771399/Desktop-wireframe_lwi0vk.png)
+
 
 ### MVP
 - Responsive
