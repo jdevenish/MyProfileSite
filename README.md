@@ -1,6 +1,7 @@
 # Project 1: My Profile Site
 
-[(Click here to view the site)](https://jdevenish.github.io/MyProfileSite/)
+[(Click here to view the site)](https://jdevenish.github.io/MyProfileSite/)  
+
 [Link to YouTube Video](https://www.youtube.com/watch?v=sjJuBYxz3EQ)
 
 ## Overview
